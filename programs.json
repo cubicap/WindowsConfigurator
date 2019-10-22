@@ -1,0 +1,21 @@
+{
+    "categories": [
+        {
+            "title": "Category 1",
+            "icon": "img/info_vect.svg",
+            "programs": [
+                {
+                    "name": "LibreOffice",
+                    "icon": "img/programs/LibreOffice_icon_3.3.1_48_px.svg",
+                    "state": "installed"
+                },
+                {
+                    "name": "Chrome",
+                    "icon": "img/programs/Google_Chrome_icon_(2011).png",
+                    "state": "installed"
+                }
+            ]
+        }
+    ]
+}
+
