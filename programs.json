@@ -6,12 +6,16 @@
             "programs": [
                 {
                     "name": "LibreOffice",
-                    "icon": "img/programs/LibreOffice_icon_3.3.1_48_px.svg",
+                    "version": "1",
+                    "iconSource": "https://opengrok.libreoffice.org/xref/core/sysui/desktop/icons/hicolor/1024x1024/apps/main.png",
+                    "localIcon": "libreoffice.svg"
                     "state": "installed"
                 },
                 {
                     "name": "Chrome",
-                    "icon": "img/programs/Google_Chrome_icon_(2011).png",
+                    "version": "1",
+                    "iconSource": "https://www.google.com/chrome/static/images/chrome-logo.svg",
+                    "localIcon": "chrome.svg"
                     "state": "installed"
                 }
             ]
