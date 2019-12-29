@@ -8,14 +8,14 @@
                     "name": "LibreOffice",
                     "version": "1",
                     "iconSource": "https://opengrok.libreoffice.org/xref/core/sysui/desktop/icons/hicolor/1024x1024/apps/main.png",
-                    "localIcon": "libreoffice.svg"
+                    "localIcon": "libreoffice.svg",
                     "state": "installed"
                 },
                 {
                     "name": "Chrome",
                     "version": "1",
                     "iconSource": "https://www.google.com/chrome/static/images/chrome-logo.svg",
-                    "localIcon": "chrome.svg"
+                    "localIcon": "chrome.svg",
                     "state": "installed"
                 }
             ]
