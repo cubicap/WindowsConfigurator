@@ -14,8 +14,8 @@
                 {
                     "name": "Chrome",
                     "version": "1",
-                    "iconSource": "https://www.google.com/chrome/static/images/chrome-logo.svg",
-                    "localIcon": "chrome.svg",
+                    "iconSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Chrome.max-2800x2800.png",
+                    "localIcon": "chrome.png",
                     "state": "installed"
                 }
             ]
