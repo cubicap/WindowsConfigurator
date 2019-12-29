@@ -7,7 +7,7 @@
                 {
                     "name": "LibreOffice",
                     "version": "1",
-                    "iconSource": "https://opengrok.libreoffice.org/download/core/sysui/desktop/icons/hicolor/1024x1024/apps/main.png?r=5fc92b92",
+                    "iconSource": "https://opengrok.libreoffice.org/download/core/sysui/desktop/icons/hicolor/scalable/apps/main.svg?r=9f0bd172",
                     "localIcon": "libreoffice.svg",
                     "state": "installed"
                 },
