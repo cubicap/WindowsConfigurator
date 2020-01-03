@@ -16,14 +16,16 @@
                             "type": "file",
                             "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
                             "fileLocal": "chrome_installer.exe",
-                            "command": "chrome_installer.exe /silent /install"
+                            "command": "chrome_installer.exe",
+                            "arguments": "/silent /install"
                         },
                         {
                             "title": "Manual",
                             "type": "file",
                             "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
                             "fileLocal": "chrome_installer.exe",
-                            "command": "chrome_installer.exe"
+                            "command": "chrome_installer.exe",
+                            "arguments": ""
                         }
                     ]
                 },
@@ -39,14 +41,16 @@
                             "type": "file",
                             "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
                             "fileLocal": "chrome_installer.exe",
-                            "command": "chrome_installer.exe /silent /install"
+                            "command": "chrome_installer.exe",
+                            "arguments": "/silent /install"
                         },
                         {
                             "title": "Manual",
                             "type": "file",
                             "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
                             "fileLocal": "chrome_installer.exe",
-                            "command": "chrome_installer.exe"
+                            "command": "chrome_installer.exe",
+                            "arguments": ""
                         }
                     ]
                 }
