@@ -8,18 +8,48 @@
                     "name": "LibreOffice",
                     "version": "1",
                     "iconSource": "https://opengrok.libreoffice.org/download/core/sysui/desktop/icons/hicolor/scalable/apps/main.svg?r=9f0bd172",
-                    "localIcon": "libreoffice.svg",
-                    "state": "installed"
+                    "iconLocal": "libreoffice.svg",
+                    "state": "installed",
+                    "options": [
+                        {
+                            "title": "Install"
+                            "type": "file",
+                            "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
+                            "fileLocal": "chrome_installer.exe",
+                            "command": "chrome_installer.exe /silent /install"
+                        },
+                        {
+                            "title": "Manual"
+                            "type": "file",
+                            "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
+                            "fileLocal": "chrome_installer.exe",
+                            "command": "chrome_installer.exe"
+                        }
+                    ]
                 },
                 {
                     "name": "Chrome",
                     "version": "1",
                     "iconSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Chrome.max-2800x2800.png",
-                    "localIcon": "chrome.png",
-                    "state": "installed"
+                    "iconLocal": "chrome.png",
+                    "state": "installed",
+                    "options": [
+                        {
+                            "title": "Install"
+                            "type": "file",
+                            "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
+                            "fileLocal": "chrome_installer.exe",
+                            "command": "chrome_installer.exe /silent /install"
+                        },
+                        {
+                            "title": "Manual"
+                            "type": "file",
+                            "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
+                            "fileLocal": "chrome_installer.exe",
+                            "command": "chrome_installer.exe"
+                        }
                 }
             ]
         }
     ]
 }
-
