@@ -12,14 +12,14 @@
                     "state": "installed",
                     "options": [
                         {
-                            "title": "Install"
+                            "title": "Install",
                             "type": "file",
                             "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
                             "fileLocal": "chrome_installer.exe",
                             "command": "chrome_installer.exe /silent /install"
                         },
                         {
-                            "title": "Manual"
+                            "title": "Manual",
                             "type": "file",
                             "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
                             "fileLocal": "chrome_installer.exe",
@@ -35,19 +35,20 @@
                     "state": "installed",
                     "options": [
                         {
-                            "title": "Install"
+                            "title": "Install",
                             "type": "file",
                             "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
                             "fileLocal": "chrome_installer.exe",
                             "command": "chrome_installer.exe /silent /install"
                         },
                         {
-                            "title": "Manual"
+                            "title": "Manual",
                             "type": "file",
                             "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
                             "fileLocal": "chrome_installer.exe",
                             "command": "chrome_installer.exe"
                         }
+                    ]
                 }
             ]
         }
