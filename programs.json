@@ -17,7 +17,7 @@
                             "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
                             "fileLocal": "chrome_installer.exe",
                             "command": "chrome_installer.exe",
-                            "arguments": "/silent /install"
+                            "arguments": ["silent", "/install"]
                         },
                         {
                             "title": "Manual",
@@ -25,7 +25,7 @@
                             "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
                             "fileLocal": "chrome_installer.exe",
                             "command": "chrome_installer.exe",
-                            "arguments": ""
+                            "arguments": []
                         }
                     ]
                 },
@@ -42,7 +42,7 @@
                             "fileSource": "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26browser%3D0%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26brand%3DGTPM/update2/installers/ChromeSetup.exe",
                             "fileLocal": "chrome_installer.exe",
                             "command": "chrome_installer.exe",
-                            "arguments": "/silent /install"
+                            "arguments": ["silent", "/install"]
                         },
                         {
                             "title": "Manual",
@@ -50,7 +50,7 @@
                             "fileSource": "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26browser%3D0%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26brand%3DGTPM/update2/installers/ChromeSetup.exe",
                             "fileLocal": "chrome_installer.exe",
                             "command": "chrome_installer.exe",
-                            "arguments": ""
+                            "arguments": []
                         }
                     ]
                 }
