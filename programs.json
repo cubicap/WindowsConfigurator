@@ -20,14 +20,14 @@
                             "hKey": "HKEY_CURRENT_USER",
                             "subKey": "Software\\7-Zip",
                             "valueName": "Path",
-                            "type": "REG_SZ"
+                            "vType": "REG_SZ"
                         },
                         {
                             "type": "registry_value",
                             "hKey": "HKEY_CURRENT_USER",
                             "subKey": "Software\\7-Zip",
                             "valueName": "Path",
-                            "type": "REG_SZ",
+                            "vType": "REG_SZ",
                             "value": "val"
                         }
                     ],
@@ -36,9 +36,9 @@
                             "title": "Install",
                             "state": "0",
                             "type": "remoteFile",
-                            "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
-                            "fileLocal": "chrome_installer.exe",
-                            "command": "chrome_installer.exe",
+                            "fileSource": "https://download.documentfoundation.org/libreoffice/stable/6.3.4/win/x86_64/LibreOffice_6.3.4_Win_x64.msi",
+                            "fileLocal": "libreoffice_installer.msi",
+                            "command": "libreoffice_installer.msi",
                             "arguments": ["/silent", "/install"]
                         },
                         {
