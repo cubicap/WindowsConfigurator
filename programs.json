@@ -13,13 +13,13 @@
                     "stateChecks": [
                         {
                             "type": "file_exists",
-                            "file": "c:/libreoffice/libreoffice.exe"
+                            "file": "C:\\Program Files\\LibreOffice\\program\\soffice.exe"
                         },
                         {
                             "type": "registry_exists",
                             "hKey": "HKEY_CURRENT_USER",
                             "subKey": "Software\\7-Zip",
-                            "valueName": "Path",
+                            "valueName": "asfeasefasef",
                             "vType": "REG_SZ"
                         },
                         {
@@ -28,7 +28,7 @@
                             "subKey": "Software\\7-Zip",
                             "valueName": "Path",
                             "vType": "REG_SZ",
-                            "value": "val"
+                            "value": "sersgdrgdg"
                         }
                     ],
                     "options": [
@@ -36,26 +36,25 @@
                             "title": "Install",
                             "state": "0",
                             "type": "remoteFile",
-                            "fileSource": "https://download.documentfoundation.org/libreoffice/stable/6.3.4/win/x86_64/LibreOffice_6.3.4_Win_x64.msi",
+                            "fileSource": "https://mirror.dkm.cz/tdf/libreoffice/stable/6.3.4/win/x86_64/LibreOffice_6.3.4_Win_x64.msi",
                             "fileLocal": "libreoffice_installer.msi",
-                            "command": "libreoffice_installer.msi",
+                            "command": "msiexec /package libreoffice_installer.msi /quiet",
                             "arguments": ["/silent", "/install"]
                         },
                         {
                             "title": "Remove",
                             "state": "1",
                             "type": "command",
-                            "fileLocal": "chrome_installer.exe",
-                            "command": "chrome_installer.exe",
-                            "arguments": ["/silent", "/install"]
+                            "command": "powershell",
+                            "arguments": ["-command", "(Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -match \"LibreOffice 6.3.4.2\"}).uninstall()"]
                         },
                         {
                             "title": "Manual",
-                            "state": "0",
+                            "state": "-1",
                             "type": "remoteFile",
-                            "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
-                            "fileLocal": "chrome_installer.exe",
-                            "command": "chrome_installer.exe",
+                            "fileSource": "https://mirror.dkm.cz/tdf/libreoffice/stable/6.3.4/win/x86_64/LibreOffice_6.3.4_Win_x64.msi",
+                            "fileLocal": "libreoffice_installer.msi",
+                            "command": "libreoffice_installer.msi",
                             "arguments": []
                         }
                     ]
@@ -88,7 +87,7 @@
                             "type": "command",
                             "fileSource": "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26browser%3D0%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26brand%3DGTPM/update2/installers/ChromeSetup.exe",
                             "fileLocal": "chrome_installer.exe",
-                            "command": "powershell ",
+                            "command": "powershell",
                             "arguments": ["-command", "(Get-ItemProperty -path 'HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Google Chrome').version | ForEach-Object {& ${env:ProgramFiles(x86)}\\Google\\Chrome\\Application\\$_\\Installer\\setup.exe --uninstall --multi-install --chrome --system-level --force-uninstall}"]
                         },
                         {
