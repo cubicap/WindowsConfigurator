@@ -10,18 +10,49 @@
                     "iconSource": "https://opengrok.libreoffice.org/download/core/sysui/desktop/icons/hicolor/scalable/apps/main.svg?r=9f0bd172",
                     "iconLocal": "libreoffice.svg",
                     "state": "installed",
+                    "stateChecks": [
+                        {
+                            "type": "file_exists",
+                            "file": "c:/libreoffice/libreoffice.exe"
+                        },
+                        {
+                            "type": "registry_exists",
+                            "hKey": "HKEY_CURRENT_USER",
+                            "subKey": "Software\\7-Zip",
+                            "valueName": "Path",
+                            "type": "REG_SZ"
+                        },
+                        {
+                            "type": "registry_value",
+                            "hKey": "HKEY_CURRENT_USER",
+                            "subKey": "Software\\7-Zip",
+                            "valueName": "Path",
+                            "type": "REG_SZ",
+                            "value": "val"
+                        }
+                    ],
                     "options": [
                         {
                             "title": "Install",
-                            "type": "file",
+                            "state": "0",
+                            "type": "remoteFile",
                             "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
                             "fileLocal": "chrome_installer.exe",
                             "command": "chrome_installer.exe",
                             "arguments": ["/silent", "/install"]
                         },
                         {
+                            "title": "Remove",
+                            "state": "1",
+                            "type": "command",
+                            "fileLocal": "chrome_installer.exe",
+                            "command": "chrome_installer.exe",
+                            "arguments": ["/silent", "/install"]
+                        },
+                        {
                             "title": "Manual",
-                            "type": "file",
+                            "state": "0",
+                            "type": "remoteFile",
                             "fileSource": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
                             "fileLocal": "chrome_installer.exe",
                             "command": "chrome_installer.exe",
@@ -35,9 +66,16 @@
                     "iconSource": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Chrome.max-2800x2800.png",
                     "iconLocal": "chrome.png",
                     "state": "installed",
+                    "stateChecks": [
+                        {
+                            "type": "file_exists",
+                            "file": "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+                        }
+                    ],
                     "options": [
                         {
                             "title": "Install",
+                            "state": "0",
                             "type": "file",
                             "fileSource": "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26browser%3D0%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26brand%3DGTPM/update2/installers/ChromeSetup.exe",
                             "fileLocal": "chrome_installer.exe",
@@ -45,7 +83,17 @@
                             "arguments": ["/silent", "/install"]
                         },
                         {
+                            "title": "Remove",
+                            "state": "1",
+                            "type": "command",
+                            "fileSource": "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26browser%3D0%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26brand%3DGTPM/update2/installers/ChromeSetup.exe",
+                            "fileLocal": "chrome_installer.exe",
+                            "command": "powershell ",
+                            "arguments": ["-command", "(Get-ItemProperty -path 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome').version | ForEach-Object {& ${env:ProgramFiles(x86)}\Google\Chrome\Application\$_\Installer\setup.exe --uninstall --multi-install --chrome --system-level --force-uninstall}"]
+                        },
+                        {
                             "title": "Manual",
+                            "state": "-1",
                             "type": "file",
                             "fileSource": "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26browser%3D0%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26brand%3DGTPM/update2/installers/ChromeSetup.exe",
                             "fileLocal": "chrome_installer.exe",
